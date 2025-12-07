@@ -1,23 +1,31 @@
 :root{
-  --bg:#f7f7fb;
+  --bg:#f4f6fb;
   --card:#ffffff;
-  --accent:#6c5ce7;
+  --accent:#2563eb;
   --muted:#6b6b6b;
-  --radius:12px;
+  --radius:10px;
   --gap:1rem;
   font-size:16px;
 }
 *{box-sizing:border-box}
 body{font-family:Inter,system-ui,Segoe UI,Roboto, "Noto Sans TC", sans-serif;margin:0;background:var(--bg);color:#111;line-height:1.5}
-.site-header{background:transparent;padding:.75rem 1rem}
+.site-header{
+  position:sticky;
+  top:0;
+  background:rgba(255,255,255,0.7);
+  backdrop-filter:blur(6px);
+  padding:.5rem 1rem;
+  border-bottom:1px solid rgba(16,24,40,.04);
+  z-index:10;
+}
 .nav{display:flex;gap:1rem;justify-content:center}
 .nav-link{color:var(--muted);text-decoration:none;padding:.5rem 0.75rem;border-radius:8px;transition:all .2s}
 .nav-link:hover{background:rgba(108,92,231,.08);color:var(--accent);transform:translateY(-2px)}
 
-.hero{display:flex;gap:1.25rem;align-items:center;max-width:1000px;margin:1.25rem auto;padding:1rem}
-.avatar{border-radius:50%;border:4px solid #fff;box-shadow:0 6px 18px rgba(17,17,17,.08)}
-.hero-info{max-width:700px}
-.name{font-size:1.6rem;margin:.2rem 0}
+.hero{display:flex;gap:1.25rem;align-items:center;max-width:900px;margin:1.25rem auto;padding:1.25rem;background:var(--card);border-radius:var(--radius);box-shadow:0 10px 30px rgba(16,24,40,.04)}
+.avatar{border-radius:50%;border:3px solid #fff;box-shadow:0 6px 18px rgba(16,24,40,.06)}
+.hero-info{max-width:720px}
+.name{font-size:1.8rem;margin:.15rem 0;font-weight:700}
 .tagline{color:var(--muted);margin:0 0 .5rem}
 .contacts{list-style:none;padding:0;margin:0;color:var(--muted)}
 .contacts a{color:var(--accent);text-decoration:none}
@@ -27,9 +35,9 @@ body{font-family:Inter,system-ui,Segoe UI,Roboto, "Noto Sans TC", sans-serif;mar
 .section-desc{color:var(--muted);margin:0 0 1rem}
 
 .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.skill{background:var(--card);padding:0.75rem;border-radius:var(--radius);box-shadow:0 6px 18px rgba(17,17,17,.04)}
+.skill{background:var(--card);padding:0.75rem;border-radius:var(--radius);box-shadow:0 8px 24px rgba(16,24,40,.04)}
 .skill-head{display:flex;justify-content:space-between;font-weight:600;margin-bottom:.5rem}
-.progress{background:#eef0ff;border-radius:999px;height:12px;overflow:hidden}
+.progress{background:#eef0ff;border-radius:999px;height:14px;overflow:hidden}
 .progress-bar{background:linear-gradient(90deg,var(--accent),#a29bfe);height:100%;transition:width .8s ease}
 .skill-percent{color:var(--muted);font-weight:500}
 
@@ -39,11 +47,11 @@ body{font-family:Inter,system-ui,Segoe UI,Roboto, "Noto Sans TC", sans-serif;mar
 .timeline{list-style:none;padding:0;margin:0}
 .timeline-item{display:flex;gap:1rem;align-items:flex-start;padding:.75rem 0;border-bottom:1px dashed #eee}
 .time{min-width:140px;color:var(--muted);font-weight:600}
-.content{background:var(--card);padding:.6rem;border-radius:8px;flex:1;box-shadow:0 6px 18px rgba(17,17,17,.03)}
+.content{background:var(--card);padding:.6rem;border-radius:8px;flex:1;box-shadow:0 8px 20px rgba(16,24,40,.03)}
 
 .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.project-card{background:var(--card);padding:1rem;border-radius:var(--radius);box-shadow:0 6px 18px rgba(17,17,17,.04);transition:transform .2s ease,box-shadow .2s ease}
-.project-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(17,17,17,.08)}
+.project-card{background:var(--card);padding:1rem;border-radius:var(--radius);box-shadow:0 8px 24px rgba(16,24,40,.04);transition:transform .18s ease,box-shadow .18s ease}
+.project-card:hover{transform:translateY(-6px);box-shadow:0 20px 48px rgba(16,24,40,.06)}
 .project-thumb{width:100%;height:140px;object-fit:cover;border-radius:8px}
 .project-title{margin:.5rem 0 0}
 .project-desc{color:var(--muted);font-size:.95rem}
