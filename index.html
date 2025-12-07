@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人簡歷 | 範例</title>
+  <link rel="stylesheet" href="./styles.css">
+  <meta name="description" content="個人簡歷範例 - 響應式單頁網站，包含技能、時間軸與作品集。">
+  <link rel="icon" href="./images/mimikyu.png">
+  <style>html{scroll-behavior:smooth}</style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="主要導覽">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="hero">
+      <img src="./images/mimikyu.png" alt="個人照示意圖" class="avatar" width="160" height="160">
+      <div class="hero-info">
+        <h1 class="name">413570622涂佑瑄</h1>
+        <p class="tagline">學生／前端實作愛好者｜設計與專案協作</p>
+        <ul class="contacts">
+          <li><strong>Email:</strong> <a href="413570622@m365.fju.edu.tw">413570622@m365.fju.edu.tw</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/TUYOU-SYUAN" target="_blank" rel="noopener">github.com/TUYOU-SYUAN</a></li>
+          
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>技能 Skills</h2>
+      <p class="section-desc">以進度條呈現常用技能，並搭配標籤雲展示其他能力。</p>
+
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-head">
+            <span>HTML / CSS</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+            <div class="progress-bar" style="width:90%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>JavaScript</span>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
+            <div class="progress-bar" style="width:75%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>設計 / 溝通</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
+            <div class="progress-bar" style="width:80%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tag-cloud" aria-hidden="false">
+        <span class="tag">專案管理</span>
+        <span class="tag">UI 設計</span>
+        <span class="tag">溝通協作</span>
+        <span class="tag">Figma</span>
+        <span class="tag">React</span>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>經歷 Experience</h2>
+      <p class="section-desc">時間軸呈現學校與社團、實作相關經歷。</p>
+
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="time">國中 — 參加科展</div>
+          <div class="content">與同學合作完成「簡易環境監測器」，負責報告與簡報設計。</div>
+        </li>
+        <li class="timeline-item">
+          <div class="time">高中 — 社團幹部</div>
+          <div class="content">擔任社團活動召集人，規劃活動流程與場地配置。</div>
+        </li>
+        <li class="timeline-item">
+          <div class="time">大一 — 前端專題</div>
+          <div class="content">參與課程專題：製作單頁作品展示，負責前端切版與互動。</div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>作品 Projects</h2>
+      <p class="section-desc">卡片式展示至少三件作品（範例）。</p>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="./images/1.png" alt="project-1" class="project-thumb">
+          <h3 class="project-title">作品 A：校園專題網站</h3>
+          <p class="project-desc">簡介：介紹校園專題內容、資料收集與結果展示。</p>
+          <p class="project-role"><strong>角色：</strong>前端切版、簡報整理</p>
+          <a class="project-link" href="#" aria-label="開啟作品 A">檢視連結</a>
+        </article>
+
+        <article class="project-card">
+          <img src="./images/2.png" alt="project-2" class="project-thumb">
+          <h3 class="project-title">作品 B：社團活動頁</h3>
+          <p class="project-desc">簡介：為社團設計活動報名與行事曆頁面。</p>
+          <p class="project-role"><strong>角色：</strong>設計、活動協調</p>
+          <a class="project-link" href="#" aria-label="開啟作品 B">檢視連結</a>
+        </article>
+
+        <article class="project-card">
+          <img src="./images/3.png" alt="project-3" class="project-thumb">
+          <h3 class="project-title">作品 C：個人練習專案</h3>
+          <p class="project-desc">簡介：小型前端專案，練習互動與響應式排版。</p>
+          <p class="project-role"><strong>角色：</strong>獨立開發</p>
+          <a class="project-link" href="#" aria-label="開啟作品 C">檢視連結</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>聯絡 Contact</h2>
+      <p>歡迎透過 Email 聯絡我：</p>
+      <a class="cta" href="mailto:example@email.com">Email 我</a>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
