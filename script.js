@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 
   // 延遲動畫：當進度條出現在畫面時，展開寬度（讀取 inline width）
+  /*
+  // 已註解：進度條進場動畫（IntersectionObserver）
+  // 如果你想重新啟用進度條動畫，可以移除下面註解。
   const observer = new IntersectionObserver(entries=>{
     entries.forEach(en=>{
       if(en.isIntersecting){
@@ -32,4 +35,5 @@ document.addEventListener('DOMContentLoaded', function(){
   },{threshold:0.2});
 
   document.querySelectorAll('.skills-grid .skill').forEach(s=>observer.observe(s));
+  */
 });
